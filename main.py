@@ -9,7 +9,7 @@ def login():
 
     while True:
 
-        crt = input("To Login 1\nTo create an account type 2\n")
+        crt = input("[+] To Login : 1 \n[+] To create an account type : 2\n")
 
         try:
             crt = int(crt)
@@ -19,7 +19,7 @@ def login():
         if (str(type(crt)) != "<class 'int'>") or int(crt) not in [1,2]:
             print("Enter a valid option or get lost\n")
         else:
-            Uname = input("Enter Username:")
+            Uname = input("Enter Username: ")
 
             try:
                 dataids = open("dataid.dat", "rb")

@@ -1,19 +1,14 @@
-# import pickle
-#
-# dic = {}
-#
-# try:
-#     dataids = open("dataid.dat", "wb")
-#     pickle.dump(dic, dataids)
-#     dataids.close()
-# except Exception as e:
-#     print(e)
-#     dataids.close()
-#
+import pickle
+import json
 
-a = 9989374283757
-b = 837591273658
+dic = {"asff":2356,"ef3qd":"23rer"}
 
-while True:
-    c = 
-
+try:
+    dataids = open("clusterdata\\dataddddd.json", "w")
+    dataa = json.dump(dic, dataids)
+    print(dataa)
+    dataids.close()
+except Exception as e:
+    print(dataa)
+    print(e)
+    dataids.close()

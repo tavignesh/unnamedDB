@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>unamedDB</title>
+    <link rel="stylesheet" href="/assets/css/drop.css" type="text/css"/>
+    <link id="theme" rel="stylesheet" type="text/css" href="/assets/css/theme.css" />
+</head>
+    <body>
+
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <div class="dropdown">
+              <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+
+        <h1 style="flood-color: tan; text-align: center; font-style: inherit; color: mediumblue; border-color: mediumvioletred;">unamedDB</h1>
+        <p>unamedDB website </p>
+
+        <style>
+            footer.bt { text-align: center; font-weight: 600; font-style: oblique; font: optional;font-family: Georgia, 'Times New Roman', Times, serif; background-origin: padding-box;}
+        </style>
+        <button id="theme-toggle" style="border-spacing: 0cm; color: rgb(238, 49, 15); font-family: Georgia, 'Times New Roman', Times, serif;">Dark Mode</button>
+        <script>
+          
+                  document.addEventListener('DOMContentLoaded', () => {
+
+                  const themeStylesheet = document.getElementById('theme');
+                  const themeToggle = document.getElementById('theme-toggle');
+                  themeToggle.addEventListener('click', () => {
+                      // if it's light -> go dark
+                      if(themeStylesheet.href.includes('light')){
+                          themeStylesheet.href = '/assets/css/dark.css';
+                          themeToggle.innerText = 'Light mode';
+                      } else {
+                          // if it's dark -> go light
+                          themeStylesheet.href = '/assets/css/light.css';
+                          themeToggle.innerText = 'Dark mode';
+
+                      }
+                  })
+                  })
+        </script>
+        
+        
+        <footer class="bt">Copyright @ 2021 </footer>
+    </body>
+</html>
